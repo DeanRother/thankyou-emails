@@ -1,0 +1,30 @@
+{
+  "name": "thankyou-emails",
+  "version": "1.0.0",
+  "description": "Store thankyou notes and batch email them.",
+  "main": "thankyou.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mssql": "^4.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeanRother/thankyou-emails.git"
+  },
+  "keywords": [
+    "thank",
+    "you",
+    "note",
+    "email"
+  ],
+  "author": "Dean Rother",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeanRother/thankyou-emails/issues"
+  },
+  "homepage": "https://github.com/DeanRother/thankyou-emails#readme"
+}
