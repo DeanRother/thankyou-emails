@@ -5,7 +5,8 @@
   "main": "thankyou.js",
   "dependencies": {
     "express": "^4.16.4",
-    "mssql": "^4.3.0"
+    "mssql": "^4.3.0",
+    "tedious": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
