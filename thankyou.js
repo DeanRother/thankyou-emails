@@ -30,6 +30,15 @@ app.get('/sql', function(req,res){
   });
 });
 
+app.get('/', function(req, res){
+  res.type('text/plain');
+  res.send('Thank you email home page.');
+});
+
+app.get('/fme', function(req,res){
+  res.type('text/plain');
+  res.send('http://fmeserver.laredoenergy.com/fmedatastreaming/Experimental/getThankYous.fmw?');
+});
 
 
 app.use(function(req,res){
