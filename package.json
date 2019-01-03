@@ -4,6 +4,7 @@
   "description": "Store thankyou notes and batch email them.",
   "main": "thankyou.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mssql": "^4.3.0",
     "tedious": "^3.0.1"
