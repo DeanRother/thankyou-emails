@@ -110,13 +110,11 @@ app.post('/sql', function(req,res){
 app.put('/sql/:id', function(req,res){
   console.log(req.body);
   data = req.body;
-  console.log(data.Gift);
+  console.log(data.ID, data.Col, data.Val);
   console.log(req.params.id);
+  data.Val = data.Val.replace("'","''");
   var qry = "update dbo.ThankYouEmail set ";
-  qry += "Gift = '" + req.body.Gift + "',";
-  qry += (data.Giver ? "Giver = '" + req.body.Giver + "'," : "");
-  qry += (data.EmailAddress ? "EmailAddress = '" + req.body.EmailAddress + "'," : "");
-  qry += (data.EmailNote ? "EmailNote = '" + req.body.EmailNote + "' " : "");
+  qry += data.Col + " = '" + data.Val + "' ";
   qry += "where ID = '" + req.params.id + "'";
   console.log(qry);
   new sql.ConnectionPool(config).connect().then(pool => {
