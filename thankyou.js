@@ -2,6 +2,7 @@ var express = require('express');
 var sql = require('mssql');
 var bodyParser = require('body-parser');
 var cors = require('cors');
+var rp = require('request-promise-native');
 
 
 var app = express();
@@ -22,7 +23,7 @@ app.set('port',process.env.PORT||3000);
 
 var config = {
   user: 'thankyou-editor',
-  password: 'thankyou-123',
+  password: 'thankyou-editor',
   server: '1YB1Z12-DROTHER\\DEV2014',
   database: 'ThankYou',
   options: {
@@ -41,6 +42,21 @@ app.get('/sql', function(req,res){
   }).catch(err => {
     res.status(500).send(err);
     sql.close();
+  });
+});
+
+app.get('/fme', function(req,res){
+  var opts = {
+    "uri": "http://SV006/fmedatastreaming/Experimental/thankyou-emails-get.fmw?opt_servicemode=sync",
+    "json": true
+  };
+  rp(opts).then( response => {
+    //console.log(response);
+    let rows = response;
+    res.setHeader('Access-Control-Allow-Origin','*');
+    res.status(200).json(rows);
+  }).catch(error => {
+    console.log(error.response);
   });
 });
 
@@ -96,6 +112,27 @@ app.post('/sql', function(req,res){
   new sql.ConnectionPool(config).connect().then(pool => {
     return pool.request().query(qry);
   }).then(result => {
+    res.setHeader('Access-Control-Allow-Origin','*');
+    //let rows = result.rowsAffected;
+    //res.status(200).json(rows);
+    res.type('text/plain');
+    res.send("Rows affected: " + res.rowsAffected);
+  }).catch(err => {
+    res.status(500).send(err);
+    sql.close();
+  });
+});
+
+app.put('/fme/:id', function(req,res){
+  data = req.body;
+  console.log(data);
+  var opts = {
+    "method": "POST",
+    "uri": "http://SV006/fmejobsubmitter/Experimental/thankyou-emails-put.fmw?opt_servicemode=async",
+    "body":  data,
+    "json": true
+  };
+  rp(opts).then(result => {
     res.setHeader('Access-Control-Allow-Origin','*');
     //let rows = result.rowsAffected;
     //res.status(200).json(rows);

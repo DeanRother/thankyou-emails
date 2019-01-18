@@ -8,6 +8,8 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "mssql": "^4.3.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
     "tedious": "^3.0.1"
   },
   "devDependencies": {},

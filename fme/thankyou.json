@@ -1,0 +1,50 @@
+[
+	{
+		"json_featuretype" : "dbo.ThankYouEmail",
+		"ID" : 1,
+		"Gift" : "Card",
+		"Giver" : "Dean",
+		"EmailAddress" : "drother@laredoenergy.com",
+		"EmailNote" : "Thank you for the gift!"
+	},
+	{
+		"json_featuretype" : "dbo.ThankYouEmail",
+		"ID" : 2,
+		"Gift" : "Book",
+		"Giver" : "Dean",
+		"EmailAddress" : "deanrother@live.com",
+		"EmailNote" : "Thank you for the book."
+	},
+	{
+		"json_featuretype" : "dbo.ThankYouEmail",
+		"ID" : 3,
+		"Gift" : "Train",
+		"Giver" : "Dean",
+		"EmailAddress" : "drother@laredoenergy.com",
+		"EmailNote" : "Thank you for the ball!"
+	},
+	{
+		"json_featuretype" : "dbo.ThankYouEmail",
+		"ID" : 4,
+		"Gift" : "CD",
+		"Giver" : "Kent",
+		"EmailAddress" : "krother@gmail.com",
+		"EmailNote" : "Thank you for the CD."
+	},
+	{
+		"json_featuretype" : "dbo.ThankYouEmail",
+		"ID" : 12,
+		"Gift" : "Used Lawn Mower",
+		"Giver" : "Eddie",
+		"EmailAddress" : "drother@laredoenergy.com",
+		"EmailNote" : "Thank you for the mower."
+	},
+	{
+		"json_featuretype" : "dbo.ThankYouEmail",
+		"ID" : 29,
+		"Gift" : "Jelly of the Month",
+		"Giver" : "Clark's Boss",
+		"EmailAddress" : "drother@laredoenergy.com",
+		"EmailNote" : "Thank you for the jellies!"
+	}
+]

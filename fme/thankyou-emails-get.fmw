@@ -1,0 +1,1059 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    "C:\Program Files\FME\2017.0.1.1\fme.exe" D:\git-repos\thankyou-emails\fme\thankyou-emails-get.fmw
+#    
+#    
+#!   FME_DOCUMENT_PRIORGUID="8898725d-0cbb-4c00-ab34-537c4e1303ac"
+#!   END_PYTHON=""
+#!   CATEGORY=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   BEGIN_TCL=""
+#!   MAX_LOG_FEATURES="200"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   TITLE=""
+#!   DESTINATION_ROUTING_FILE=""
+#!   DESCRIPTION=""
+#!   DOC_TOP_LEFT="100 -301"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   TERMINATE_REJECTED="YES"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   LOG_FILE=""
+#!   HISTORY=""
+#!   DOC_EXTENTS="1471.49 71"
+#!   FME_SERVER_SERVICES=""
+#!   SHOW_INFO_NODES="true"
+#!   MARKDOWN_USAGE=""
+#!   SOURCE="NONE"
+#!   DESTINATION="NONE"
+#!   LAST_SAVE_BUILD="FME(R) 2017.0.1.1 (20170512 - Build 17291 - WIN64)"
+#!   IGNORE_READER_FAILURE="No"
+#!   END_TCL=""
+#!   USE_MARKDOWN=""
+#!   ZOOM_SCALE="100"
+#!   FME_BUILD_NUM="17291"
+#!   FME_DOCUMENT_GUID="c07da7f7-42e3-4638-b968-f3ecb730389d"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   SHOW_ANNOTATIONS="true"
+#!   SOURCE_ROUTING_FILE=""
+#!   LAST_SAVE_DATE="2019-01-18T13:06:11"
+#!   BEGIN_PYTHON=""
+#!   VIEW_POSITION="-96.876 0"
+#!   WORKSPACE_VERSION="1"
+#!   PASSWORD=""
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PYTHON_COMPATIBILITY="27"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   MARKDOWN_DESCRIPTION=""
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   USAGE=""
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="MSSQL_ADO"
+#!   DATASET="ThankYou"
+#!   KEYWORD="MSSQL_ADO_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="mssql_sql_statement &quot;&quot; mssql_where_clause &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_rotation float multi_reader_id integer fme_sweep_angle float fme_type char(50) fme_basename char(50) fme_fill_color char(50) multi_reader_type char(50) multi_reader_keyword char(50) fme_text_string char(50) fme_primary_axis float fme_start_angle float fme_color char(50) fme_geometry fme_char(50) fme_dataset char(50) multi_reader_full_id integer fme_secondary_axis float fme_feature_type char(50) fme_text_size float db_type char(254)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP mssql_table_setings_group mssql_where_clause%mssql_sql_statement Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT mssql_where_clause WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT mssql_sql_statement SELECT Statement&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="Clustered ClusteredNotNull Indexed IndexedNotNull NotNull PrimaryKey Unique UniqueClustered"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   GENERATE_FME_BUILD_NUM="17291"
+#!   FEATURE_TYPES=""
+#!   COORDSYS=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   START_FEATURE=""
+#!   MIN_FEATURES=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="Database"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="MSSQL_ADO_IN_READ_CACHE_SIZE MSSQL_ADO_OUT_BULK_INSERT MSSQL_ADO_OUT_TRANSACTION_INTERVAL MSSQL_ADO_OUT_BEGIN_SQL{0} MSSQL_ADO_OUT_END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="JSON"
+#!   DATASET="thankyou.json"
+#!   KEYWORD="JSON_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="600"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_type string fme_start_angle float fme_geometry fme_char(50) fme_dataset string fme_rotation float fme_basename string fme_color string fme_feature_type string fme_fill_color string fme_sweep_angle float fme_secondary_axis float fme_primary_axis float fme_text_string string fme_text_size float"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE_OR_URL"
+#!   GENERATE_FME_BUILD_NUM="17291"
+#!   COORDSYS=""
+#!   FANOUT_GROUP="NO"
+#!   FANOUT_EXPRESSION=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the JSON file(s) or Specify the JSON URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="json file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the JSON file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/json ADD_DISPOSITION"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bit"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="image"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ntext"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uniqueidentifier"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="tinyint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="identity"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime2"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smalldatetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="money"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallmoney"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nvarchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varbinary(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="JSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="JSON"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="db_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="MSSQL_ADO"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_rectangle"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_rounded_rectangle"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_line"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_line"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="JSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="JSON"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="dbo.ThankYouEmail"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="db_none"
+#!   POSITION="100 -230"
+#!   BOUNDING_RECT="100 -230 634.382 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="MSSQL_ADO_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="identity" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Gift" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Giver" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="EmailAddress" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="EmailNote" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_table_setings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_where_clause" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_sql_statement" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="dbo.ThankYouEmail"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="json_no_geom"
+#!   POSITION="1046.89 -230"
+#!   BOUNDING_RECT="1046.89 -230 524.6 71"
+#!   ORDER="5e+14"
+#!   COLLAPSED="false"
+#!   KEYWORD="JSON_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="int" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Gift" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Giver" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="EmailAddress" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="EmailNote" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmedatastreaming"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="OUTPUT_WRITER"
+#!   VALUE="JSON_1"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="Experimental"
+#! />
+#! <ITEM
+#!   NAME="thankyou-emails-get.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_TOPIC_MESSAGE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DATA"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:SOURCE_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SERVER_DEST_DIR"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":DatasetMgr_JSON_1:DestDataset_JSON_1"
+#!   VALUE="thankyou.json"
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_TEMP"
+#!   VALUE=""
+#! />
+#! </MODIFICATIONS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 27
+GUI IGNORE MSSQL_ADO_IN_ENCRYPT_CONNECTION_MSSQL_ADO_1,MSSQL_ADO_IN_PASSWORD_MSSQL_ADO_1,MSSQL_ADO_IN_USER_NAME_MSSQL_ADO_1,MSSQL_ADO_IN_USE_SSPI_MSSQL_ADO_1,SourceDataset_MSSQL_ADO_1,MSSQL_ADO_IN_SERVER_MSSQL_ADO_1,MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1,MSSQL_ADO_IN_WHERE_CLAUSE_MSSQL_ADO_1,MSSQL_ADO_IN_EXPOSE_ATTRS_GROUP_MSSQL_ADO_1,MSSQL_ADO_IN_ADVANCED_MSSQL_ADO_1,MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1,DestDataset_JSON_1,JSON_OUT_WRITE_FEATURE_TYPE_KEY_JSON_1,JSON_OUT_FEATURE_TYPE_KEY_JSON_1,JSON_OUT_WRITE_GEOMETRY_JSON_1,JSON_OUT_GEOMETRY_KEY_JSON_1,JSON_OUT_GEOMETRY_FORMAT_JSON_1,JSON_OUT_WRITE_COORDINATE_SYSTEM_JSON_1,JSON_OUT_COORDINATE_SYSTEM_KEY_JSON_1,JSON_OUT_COORDINATE_SYSTEM_FORMAT_JSON_1,JSON_OUT_WRITER_CHARSET_JSON_1,JSON_OUT_WRITE_BOM_JSON_1,JSON_OUT_PRETTY_PRINT_JSON_1,JSON_OUT_INDENT_SIZE_JSON_1,JSON_OUT_JSONP_FUNC_NAME_JSON_1
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MSSQL_ADO
+READER_KEYWORD MSSQL_ADO_1
+READER_GEN_DIRECTIVES EXPOSE_ATTRS_GROUP,,ADVANCED,,TABLELIST,dbo.ThankYouEmail,READ_CACHE_SIZE,10,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,WHERE_CLAUSE,,FME_CONNECTION_GROUP,,MSSQL_ADO_EXPOSE_FORMAT_ATTRS,,COMMAND_TIMEOUT,30,_MERGE_SCHEMAS,YES,NAMED_CONNECTION,1YB1Z12-DROTHER_DEV2014_ThankYou
+
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} JSON
+MULTI_WRITER_KEYWORD{0} JSON_1
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+MACRO WB_KEYWORD "MSSQL_ADO_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER MSSQL_ADO MSSQL_ADO_1
+DEFAULT_MACRO MSSQL_ADO_IN_SERVER_MSSQL_ADO_1 1YB1Z12-DROTHER\DEV2014
+MSSQL_ADO_1_SERVER "$(MSSQL_ADO_IN_SERVER_MSSQL_ADO_1)"
+GUI TEXT MSSQL_ADO_IN_SERVER_MSSQL_ADO_1 Server:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_MSSQL_ADO_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER MSSQL_ADO MSSQL_ADO_1
+DEFAULT_MACRO SourceDataset_MSSQL_ADO_1 ThankYou
+MSSQL_ADO_1_DATASET "$(SourceDataset_MSSQL_ADO_1)"
+GUI TEXT SourceDataset_MSSQL_ADO_1 Database:
+DEFAULT_MACRO MSSQL_ADO_IN_USE_SSPI_MSSQL_ADO_1 NO
+MSSQL_ADO_1_USE_SSPI "$(MSSQL_ADO_IN_USE_SSPI_MSSQL_ADO_1)"
+GUI ACTIVECHOICE_LOOKUP MSSQL_ADO_IN_USE_SSPI_MSSQL_ADO_1 Windows<space>Authentication,YES,USER_NAME,PASSWORD%SQL<space>Server<space>Authentication,NO Authentication:
+DEFAULT_MACRO MSSQL_ADO_IN_USER_NAME_MSSQL_ADO_1 thankyou-editor
+MSSQL_ADO_1_USER_NAME "$(MSSQL_ADO_IN_USER_NAME_MSSQL_ADO_1)"
+GUI TEXT MSSQL_ADO_IN_USER_NAME_MSSQL_ADO_1 Username:
+DEFAULT_MACRO MSSQL_ADO_IN_PASSWORD_MSSQL_ADO_1 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszgok5a5N1hiqL0OnZboj31chQNu08A50jLrJTxZ4zs4/zBaR4om/fOP4q+7Nljr8yaMjdg3NApaidiYYGh4v0uGo4/iyp8nmXbIKkJxHflHGpxlLtvFtPdR1qsBxMzJzDBOqb8oRCtfO8jrkoIsDqWEZgThNJ6Qtt++XEdLT5BVUsfOJr31oZKT1q7UYzYpmbyJydYLyHs8bMW7gkHOoe+O3KqpqDe9Rj8RacBtkdY4EmGA8YQYYhaXFFWU6z15io2/J5gzFy+IlypeuX1jRvU5lTJVF9mJfwLYsVz13e2RwSWOQ+CtdCElHXbvxb9DkM9fLgJO/VPIjWLNKx1wc8+h8Qj1Z0FsJw)
+MSSQL_ADO_1_PASSWORD "$(MSSQL_ADO_IN_PASSWORD_MSSQL_ADO_1)"
+GUI PASSWORD_ENCODED MSSQL_ADO_IN_PASSWORD_MSSQL_ADO_1 Password:
+DEFAULT_MACRO MSSQL_ADO_IN_ENCRYPT_CONNECTION_MSSQL_ADO_1 NO
+MSSQL_ADO_1_ENCRYPT_CONNECTION "$(MSSQL_ADO_IN_ENCRYPT_CONNECTION_MSSQL_ADO_1)"
+GUI OPTIONAL CHECKBOX MSSQL_ADO_IN_ENCRYPT_CONNECTION_MSSQL_ADO_1 YES%NO Encrypt Connection
+# The dataset this mapping file was generated from was:
+DEFAULT_MACRO MSSQL_ADO_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_MSSQL_ADO_1 Yes
+MSSQL_ADO_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(MSSQL_ADO_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_MSSQL_ADO_1)"
+# ============================================================================
+# Command timeout
+DEFAULT_MACRO MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1 30
+MSSQL_ADO_1_COMMAND_TIMEOUT "$(MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1)"
+GUI OPTIONAL INTEGER MSSQL_ADO_IN_COMMAND_TIMEOUT_MSSQL_ADO_1 Command Timeout (Seconds):
+# ============================================================================
+# And an optional global WHERE clause
+DEFAULT_MACRO MSSQL_ADO_IN_WHERE_CLAUSE_MSSQL_ADO_1 
+MSSQL_ADO_1_WHERE_CLAUSE "$(MSSQL_ADO_IN_WHERE_CLAUSE_MSSQL_ADO_1)"
+GUI OPTIONAL TEXT MSSQL_ADO_IN_WHERE_CLAUSE_MSSQL_ADO_1 WHERE Clause:
+DEFAULT_MACRO MSSQL_ADO_IN_EXPOSE_ATTRS_GROUP_MSSQL_ADO_1 
+MSSQL_ADO_1_EXPOSE_ATTRS_GROUP "$(MSSQL_ADO_IN_EXPOSE_ATTRS_GROUP_MSSQL_ADO_1)"
+GUI DISCLOSUREGROUP MSSQL_ADO_IN_EXPOSE_ATTRS_GROUP_MSSQL_ADO_1 MSSQL_ADO_EXPOSE_FORMAT_ATTRS Schema Attributes
+GUI DISCLOSUREGROUP MSSQL_ADO_IN_ADVANCED_MSSQL_ADO_1 READ_CACHE_SIZE Advanced
+# ============================================================================
+# This keyword controls how many records to retrieve at one time into local
+# memory from the provider
+DEFAULT_MACRO MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1 10
+MSSQL_ADO_1_READ_CACHE_SIZE "$(MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1)"
+GUI OPTIONAL TEXT MSSQL_ADO_IN_READ_CACHE_SIZE_MSSQL_ADO_1 Number Of Records To Fetch At A Time
+# ===========================================================================
+DEFAULT_MACRO MSSQL_ADO_IN_ATTRIBUTE_READING_MSSQL_ADO_1 DEFLINE_ATTRS
+MSSQL_ADO_1_ATTRIBUTE_READING "$(MSSQL_ADO_IN_ATTRIBUTE_READING_MSSQL_ADO_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "JSON_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER JSON JSON_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_JSON_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER JSON JSON_1
+DEFAULT_MACRO DestDataset_JSON_1 thankyou.json
+GUI FILENAME DestDataset_JSON_1 JSON_Files(*.json)|*.json|All_Files|* Destination JSON (JavaScript Object Notation) File:
+DEFAULT_MACRO JSON_OUT_WRITE_FEATURE_TYPE_KEY_JSON_1 YES
+JSON_1_WRITE_FEATURE_TYPE_KEY "$(JSON_OUT_WRITE_FEATURE_TYPE_KEY_JSON_1)"
+GUI ACTIVEDISCLOSUREGROUP JSON_OUT_WRITE_FEATURE_TYPE_KEY_JSON_1 FEATURE_TYPE_KEY Write Feature Type Key
+DEFAULT_MACRO JSON_OUT_FEATURE_TYPE_KEY_JSON_1 json_featuretype
+JSON_1_FEATURE_TYPE_KEY "$(JSON_OUT_FEATURE_TYPE_KEY_JSON_1)"
+GUI TEXT JSON_OUT_FEATURE_TYPE_KEY_JSON_1 Feature Type Key Name:
+DEFAULT_MACRO JSON_OUT_WRITE_GEOMETRY_JSON_1 YES
+JSON_1_WRITE_GEOMETRY "$(JSON_OUT_WRITE_GEOMETRY_JSON_1)"
+GUI ACTIVEDISCLOSUREGROUP JSON_OUT_WRITE_GEOMETRY_JSON_1 GEOMETRY_KEY%GEOMETRY_FORMAT%WRITE_COORDINATE_SYSTEM Write Geometry
+DEFAULT_MACRO JSON_OUT_GEOMETRY_KEY_JSON_1 json_geometry
+JSON_1_GEOMETRY_KEY "$(JSON_OUT_GEOMETRY_KEY_JSON_1)"
+GUI TEXT JSON_OUT_GEOMETRY_KEY_JSON_1 Geometry Key Name:
+DEFAULT_MACRO JSON_OUT_GEOMETRY_FORMAT_JSON_1 GeoJSON
+JSON_1_GEOMETRY_FORMAT "$(JSON_OUT_GEOMETRY_FORMAT_JSON_1)"
+GUI CHOICE JSON_OUT_GEOMETRY_FORMAT_JSON_1 GeoJSON%OGC-WKT%None Geometry Format:
+DEFAULT_MACRO JSON_OUT_WRITE_COORDINATE_SYSTEM_JSON_1 YES
+JSON_1_WRITE_COORDINATE_SYSTEM "$(JSON_OUT_WRITE_COORDINATE_SYSTEM_JSON_1)"
+GUI ACTIVEDISCLOSUREGROUP JSON_OUT_WRITE_COORDINATE_SYSTEM_JSON_1 COORDINATE_SYSTEM_KEY%COORDINATE_SYSTEM_FORMAT Write Coordinate System
+DEFAULT_MACRO JSON_OUT_COORDINATE_SYSTEM_KEY_JSON_1 json_ogc_wkt_crs
+JSON_1_COORDINATE_SYSTEM_KEY "$(JSON_OUT_COORDINATE_SYSTEM_KEY_JSON_1)"
+GUI TEXT JSON_OUT_COORDINATE_SYSTEM_KEY_JSON_1 Coordinate System Key Name:
+DEFAULT_MACRO JSON_OUT_COORDINATE_SYSTEM_FORMAT_JSON_1 OGC-WKT
+JSON_1_COORDINATE_SYSTEM_FORMAT "$(JSON_OUT_COORDINATE_SYSTEM_FORMAT_JSON_1)"
+GUI CHOICE JSON_OUT_COORDINATE_SYSTEM_FORMAT_JSON_1 OGC-WKT%"Name only" Coordinate System Format:
+DEFAULT_MACRO JSON_OUT_WRITER_CHARSET_JSON_1 UTF-8
+JSON_1_WRITER_CHARSET "$(JSON_OUT_WRITER_CHARSET_JSON_1)"
+GUI CHOICE JSON_OUT_WRITER_CHARSET_JSON_1 UTF-8%UTF-16%UTF-16BE%UTF-16LE%UTF-32%UTF-32BE%UTF-32LE Output Character Set:
+DEFAULT_MACRO JSON_OUT_WRITE_BOM_JSON_1 No
+JSON_1_WRITE_BOM "$(JSON_OUT_WRITE_BOM_JSON_1)"
+GUI CHOICE JSON_OUT_WRITE_BOM_JSON_1 Yes%No Byte Order Marker:
+DEFAULT_MACRO JSON_OUT_PRETTY_PRINT_JSON_1 YES
+JSON_1_PRETTY_PRINT "$(JSON_OUT_PRETTY_PRINT_JSON_1)"
+GUI ACTIVECHOICE_LOOKUP JSON_OUT_PRETTY_PRINT_JSON_1 Pretty<space>Print,YES%Linear,NO,JSON_OUT_INDENT_SIZE Formatting Type:
+DEFAULT_MACRO JSON_OUT_INDENT_SIZE_JSON_1 0
+JSON_1_INDENT_SIZE "$(JSON_OUT_INDENT_SIZE_JSON_1)"
+GUI LOOKUP_CHOICE JSON_OUT_INDENT_SIZE_JSON_1 Tabs,0%1<space>space,1%2<space>spaces,2%3<space>spaces,3%4<space>spaces,4%5<space>spaces,5%6<space>spaces,6%7<space>spaces,7%8<space>spaces,8 Indent Size:
+DEFAULT_MACRO JSON_OUT_JSONP_FUNC_NAME_JSON_1 
+JSON_1_JSONP_FUNC_NAME "$(JSON_OUT_JSONP_FUNC_NAME_JSON_1)"
+GUI OPTIONAL TEXT JSON_OUT_JSONP_FUNC_NAME_JSON_1 JSONP Function Name:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO JSON_OUT_DESTINATION_DATASETTYPE_VALIDATION_JSON_1 Yes
+JSON_1_DESTINATION_DATASETTYPE_VALIDATION "$(JSON_OUT_DESTINATION_DATASETTYPE_VALIDATION_JSON_1)"
+JSON_1_DATASET "$(DestDataset_JSON_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)thankyou-emails-get.log"
+LOG_APPEND YES
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_MSSQL_ADO_1 MSSQL_ADO_1
+DEFAULT_MACRO DATASET_KEYWORD_JSON_1 JSON_1
+# -------------------------------------------------------------------------
+
+MSSQL_ADO_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME thankyou-emails-get
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD MSSQL_ADO_1   INPUT FEATURE_TYPE *    ROUTE MSSQL_ADO MSSQL_ADO_1::dbo.ThankYouEmail TO FME_GENERIC ::dbo.ThankYouEmail ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+MSSQL_ADO_1_MERGE_DEF MSSQL_ADO_1::dbo.ThankYouEmail EXACT dbo.ThankYouEmail DEFLINE mssql_sql_statement,,mssql_where_clause,,ID,identity,Gift,varchar<openparen>50<closeparen>,Giver,varchar<openparen>50<closeparen>,EmailAddress,varchar<openparen>50<closeparen>,EmailNote,text
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "dbo.ThankYouEmail (MSSQL_ADO_1) Splitter"    INPUT FEATURE_TYPE dbo.ThankYouEmail    OUTPUT FEATURE_TYPE dbo.ThankYouEmail_MSSQL_ADO_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC dbo.ThankYouEmail_MSSQL_ADO_1 TO JSON __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>dbo.ThankYouEmail<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+JSON_1_DEF dbo.ThankYouEmail   ID                           int   Gift                         string   Giver                        string   EmailAddress                 string   EmailNote                    string
